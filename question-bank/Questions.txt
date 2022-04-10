@@ -1,0 +1,3 @@
+Is java Pass by Value or Pass or Reference. Why ?
+> It is pass by value when any changes done to a variable which has been passed as a parameter has scope limited only inside of that method. For primitive variables.
+> It is pass by reference when any changes done to a variable which has been passed as a parameter has scope outside of that method. For example Object references as method inputs.

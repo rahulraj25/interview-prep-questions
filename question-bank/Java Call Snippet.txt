@@ -1,0 +1,18 @@
+public class JavaClass {
+public void method(String str){
+System.out.println("String method " + str);
+}
+
+public void method(Object object) {
+System.out.println("Object method " + object);
+}
+
+ public static void main(String[] args) {
+JavaClass instance = new JavaClass();
+instance.method("Hello"); -- String method Hello
+instance.method(new String("World"));  -- String method World
+String str = new String("Mango");
+instance.method((Object)str); -- Object method [hashcode]
+instance.method(null); -- String method null
+}
+}

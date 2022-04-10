@@ -1,0 +1,41 @@
+Write program to return word as a list value and its length as a key in descending sorting order from below sentence, -
+Input => 
+
+String statement = "Hello World My name is Jane and I hate Mango Fruit ";
+
+Output=>
+
+{5 = [“Hello”, “World”, “Mango”, “Fruit”], 4 = [“name”, “Jane”, “hate”], 3 = [“and”], 2 = [“My”, “is”], 1 = [“I”]}
+
+package demo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+import java.util.TreeMap;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        String statement = "Hello World My name is Jane and I hate Mango Fruit ";
+
+        TreeMap<Integer, List<String>> integerListTreeMap = new TreeMap<>();
+
+        StringTokenizer stringTokenizer = new StringTokenizer(statement, " ");
+        while (stringTokenizer.hasMoreTokens()){
+            String s = stringTokenizer.nextToken();
+            if(integerListTreeMap.containsKey(s.length())){
+                integerListTreeMap.get(s.length()).add(s);
+            }else{
+                List<String> strings = new ArrayList<>();
+                strings.add(s);
+                integerListTreeMap.put(s.length(),strings);
+            }
+        }
+
+        System.out.println(integerListTreeMap.descendingMap());
+
+    }
+}
+{5=[Hello, World, Mango, Fruit], 4=[name, Jane, hate], 3=[and], 2=[My, is], 1=[I]}

@@ -1,0 +1,6 @@
+Service Discovery
+Netflix Eureka
+How to make microservice fault tolerant and resilient
+Issues with Microservices
+Circuit Breaker - Netflix Hystrix - @EnableCircuitBreaker,@HystrixCommand
+BulkHead pattern

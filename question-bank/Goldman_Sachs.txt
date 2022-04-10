@@ -1,0 +1,36 @@
+Sangeeta
+About Project:
+
+controlS -> compliance
+
+across divisions
+Analytics
+
+data from across divisions -> Data Modelling
+Millions of transactions
+Analytics Dashboard 
+
+compute 
+
+Tech Stack 
+Java
+Moving into distributed architecture
+React, Redux
+
+What are you looking in your ideal candidate? <-> VP
+Cloud solutions?
+which position ?
+What is the team size? and team composition ?
+
+4-5 rounds
+Coderpad -> interactive IDE
+2 questions , 1 hour
+optimazations
+
+Design
+DS, Algo
+
+2 interviewers
+
+2 weeks
+

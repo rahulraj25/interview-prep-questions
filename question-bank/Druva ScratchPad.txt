@@ -1,0 +1,30 @@
+//DRUVA
+
+years 
+
+months
+
+
+01 - 01 -1900
+
+
+20- 01 - 1992
+
+year - 1; 
+
+getdays(1900)
+366
+365
+
+totalDays = daysCount + day + MonthDays(6)
+totalDays = daysCount + day + MonthDays(6)
+
+int (int year){
+	for (i =1900;i<year-1;i++){
+	
+	if leap year
+		count += 366
+	else
+		count += 365
+
+}

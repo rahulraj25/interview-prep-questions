@@ -1,0 +1,10 @@
+CAP Theorem (Consistency, Availability and partition tolerance)	 - https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/
+Difference between Clustered and Non-clustered index
+Data Storage Types  - Column oriented Store (Hbase,Cassandra etc)
+Load Balancer - Implement a load balancer
+Vertical Scaling and Horizontal Scaling - differences
+Service Discovery - Zookeeper
+Bloom Filter - (A Bloom filter is a data structure used to detect whether an element is in a set in a time and space efficient way.)
+Design a stock excahange application
+What is reverse proxy?
+Implement a custom HashMap

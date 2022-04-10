@@ -1,0 +1,40 @@
+DRUVA
+
+//single node delete
+
+
+class Node {
+	Node next;
+	int data;
+}
+
+Node deleteNthNode(Node head, int n){
+	//check for size
+	
+	Node temp = head;
+	int counter = 0;
+	
+	if(n == 0){
+		temp = head.next ;
+		head.next = null;
+		head = temp;
+		//return head.next;
+	}
+	
+	while(node.next != null){
+		if(counter == n){
+			prev.next = node.next.next;
+			return head;
+		}		
+		
+		prev = node;
+		node = node.next;
+		
+		++counter;
+	}
+	
+	if(counter == n){
+		prev.next = null;
+	}
+	
+}

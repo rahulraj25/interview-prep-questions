@@ -1,0 +1,34 @@
+
+
+
+List<String> fruits  = new ArrayList<>();
+
+fruits.add("apple");
+fruits.add("banana");
+fruits.add("guava");
+
+
+List<String> filtered = fruits.stream.filter(a -> a.startsWith("a")).collect(Collectors.toList());
+printList(filtered);
+
+
+public static void printList(List<String> list){
+	list.stream.forEach(System::out.println);
+}
+
+
+//School Management
+
+//Domain Name -> www.sms.com
+// create, update , list based on rollnumber
+
+//14 -> student details
+
+www.sms.com/studentmanagement/subscription 
+
+
+
+www.sms.com/studentmanagement/getStudentDetails -> 3 kinds 
+www.sms.com/studentmanagement/getStudentDetails?&rollnumber=14
+www.sms.com/studentmanagement/addStudent/
+request bo

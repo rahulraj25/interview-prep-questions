@@ -1,0 +1,108 @@
+ [2, 6, 8, 3, 4, 7, 9, 1]
+
+	2 
+	 6
+ [ 4 , 5 ,91 , 3, 4 ,18 ] 
+  4 18  14
+  5 18
+  91 18
+  3 18 15
+  4 18
+  
+  i =arr[0];
+  j= arr[1];
+  min = Integer.MAX_VALUE;
+  max = 0;
+  
+  while(i<arr.length && j<arr.length){
+	if(arr[i] < min && arr[i] < arr[j])
+		min =arr[i++];
+	if(arr[j] > max && arr[j] < arr[i])
+		max = arr[j++];
+  }
+   
+  return max - min ;
+  
+  //[5,2,4,[9,6,8,1,[2,0,3,1,7,5]]]
+  
+  //5 2 4  9 6 8 1 2 0 3 1 7 5 
+  
+  arrayParser(arr, memory){ 
+  for(int i=0 ;i< arr.length, i++){
+		if(element is single)
+			memory.add(arr[i]);
+
+		 
+		else
+			arrayParser[i];
+  }
+  
+  
+	int start = 0;
+	int end = memory.size();
+	int mid =  (start +  end)/2;
+	mergesort(memory , 0 , end);
+  }
+  
+  mergesort(List<Integer> memory, int start, int end){
+	
+	if(start < end){
+		int mid = (start + end)/2;   
+		 
+		mergesort(memory , start, mid);// 0 10 0 5 0 2 0 1  
+		mergesort(memory , mid +1, end);// 6 10 8 10  9 10
+	}
+	
+	return merge(memory, start, mid, end);
+  
+  }
+  
+  merge(memory, start, mid, end){
+	i = start;
+	j = mid;
+	while(i <= mid && j < end){
+	
+	if(memory.get(i) <= memory.get(j)){
+		
+		memory2.add(memory.get(i));
+		i++;
+	}else{
+		memory2.add(memory.get(j));
+		j++;
+	}
+	
+	}
+	
+	while(i <= mid){
+		memory2.add(memory.get(i));
+		i++;
+	}
+	
+	while(j <= end){
+		memory2.add(memory.get(j));
+		j++;
+	}
+	
+  return memory2;
+  
+  }
+  
+  
+  
+			
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
