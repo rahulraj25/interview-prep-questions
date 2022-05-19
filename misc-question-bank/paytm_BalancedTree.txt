@@ -1,0 +1,35 @@
+balanced tree
+
+
+find height of left subtree
+find height of right subtree
+
+public String isBalancedTree(Node root)
+
+htLeft = 1 + height(root.left);
+htRight = 1 + height(root.right);
+
+if(htLeft == htRight)
+	return "Balanced";
+else
+	return "Not Balanced";
+
+}
+
+int height(Node node){
+	//Base case
+	if(node == null)
+		return 0;
+		
+	int left = 1 + height(node.left);
+	int right = 1 + height(node.right);
+	
+	return Math.max(left, right); 
+}
+
+  1
+
+ 2 3
+
+4 5 6 7
+	 

@@ -1,0 +1,57 @@
+
+You have to build an online doctor consultation app which users can use for booking appointments.  Uploading images/scans/reports and should be able to download prescription etc.   Doctors and patients should be able to connect through video call.
+
+--------------------
+Doctors
+Patients
+
+FRs:
+Book appointments
+Upload Images
+Download images
+Connect using video call
+
+NFRs:
+Scalable
+Maintaintable
+Reliable -> (replication) backups
+
+
+Services:
+
+AppointmentService -> MasterSlave
+AppointmentFulfilmentAPI -> Oracle DB
+DoctorAvailabilityAPI -> Oracle DB
+ImageService -> Amazon S3, Redis DB/ (Image metadata)
+
+UI
+
+VideoConnectService -> 
+AppointmentToken
+DoctorName
+Slot
+Duration
+PatientId
+
+
+1. UI
+2. AppointmentService -> 
+3.
+
+Technology Stack:
+Microservices Architecture
+RESTful APIs
+Redis
+Oracle DB
+Amazon S3
+UI -> React
+Spring Security
+Zookeeper
+JSON
+Docker / Teamcity
+Hystrix
+Load Balancer
+
+
+
+

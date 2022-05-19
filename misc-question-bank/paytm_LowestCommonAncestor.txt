@@ -1,0 +1,58 @@
+binary tree
+LCA of 2 nodes
+
+  1
+
+ 2 3
+
+4 5 6 7
+	 /
+	8
+
+4 5 2 6 8 7 3 1
+
+ 	
+list ancestors and levels of both nodes ?
+find the least
+
+Node root;
+listAncestors(root, toFind, ancestors1);
+listAncestors(root, toFind, ancestors2);
+
+findCommon(ancestors1,ancestors2);
+
+listAncestors(Node node, Node toFind, List<Node> ancestors){
+	
+	if(node == null)
+		return;
+	else if(node.equals(toFind))
+		return ancestors;
+	else{
+		ancestors.add(node);
+		listAncestors(node.left, toFind, ancestors);
+		listAncestors(node.right, toFind, ancestors);
+	}
+}
+
+lis1 -> 1 
+
+
+Node 3 -> 1(0)
+
+Node 5 -> 2(1) ,1(0)
+
+4 5 2 6 7 3 1
+
+Node left
+Node right
+int data
+
+postfix(Node root, List<Node> nodes){
+		
+		
+		postfix(root.left);
+		postfix(root.right);
+		nodes.;
+}
+
+
